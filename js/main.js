@@ -25,7 +25,10 @@ $(document).ready(
         })
     },
 
-    $('#search_btn').click(function () {
+    $('#search_btn').click(function (event) {
+        //prevent reload
+        event.preventDefault();
+
         //get search query
         var search_query = document.getElementById('search_query').value;
         //replace spaces with +
