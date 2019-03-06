@@ -1,5 +1,12 @@
 //Run jQuery after the document is fully loaded.
 $(document).ready(
+
+    $('#searchBtn').bind('click', function () {
+        $('#searchBar').load('index.html', function (responseTxt,statusText,xhr) {
+            
+        })
+    }),
+
     //The function that does the stuff.
     function () {
         //Make the AJAX call
